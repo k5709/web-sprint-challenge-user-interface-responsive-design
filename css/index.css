@@ -1,3 +1,9 @@
+/* *{
+	box-sizing: border-box;
+	border:1px solid blueviolet ;
+	margin: 0;
+	max-width: 100%;
+} * */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -85,12 +91,37 @@ p, a {
 
 /* header section */
 header {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100vh;
     background-image: url('../img/home-header.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    text-align: center;
+}
+.background-trans{
+    background-color: rgb(0, 4, 17, .8);
+     height: 26vh;
+     width: 100%;
+}
+div.nav-buttons{
+      display: flex;
+      justify-content: space-evenly;
+      padding: 20px;
+}
+div.social-images{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 30px;
+}
+button{
+    background-color: rgb(0, 4, 17, .8);
+}
+div.nav-buttons{
+    
 }
 
 /* spacers */
@@ -111,6 +142,13 @@ header {
     height: 100vh;
     text-align: center;
     background-color: rgb(0, 4, 17);
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+    ;
+}
+.gallery div{
+
 }
 
 /* about us section */

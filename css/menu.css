@@ -1,3 +1,9 @@
+/* *{
+	box-sizing: border-box;
+	border:1px solid blueviolet ;
+	margin: 0;
+	max-width: 100%;
+} * */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -94,7 +100,50 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: top;
 }
+header h1 a{
+    background-color: transparent;
+    font-size: larger;
+}
+
+.background-trans{
+    background-color: rgb(0, 4, 17, .8);
+     height: 29vh;
+     width: 100%;
+}
+div.nav-buttons{
+      display: flex;
+      justify-content: space-evenly;
+      padding: 20px; 
+      width: 100%;
+}
+button.social-images{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    width: 4rem;
+    height: 4rem;
+}
+div.social-images{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 14px 28px;
+    text-align: center;
+}
+button{
+    background-color: transparent;
+    border-radius: 20%;
+    border: transparent;
+}
+
+
 
 /* spacer */
 .spacer {
@@ -113,12 +162,81 @@ header {
 .menu {
     width: 100%;
     height: auto;
-    background-image: url('../img/staff-bartender.jpg');
-    background-color: rgb(0, 4, 17);
+    /* background-image: url('../img/staff-bartender.jpg');
+    background-color: rgba(0, 4, 17 .8);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-blend-mode: multiply; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    
 }
+.row{
+    display: flex;
+    border:  1px solid black;
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.title{
+    text-align: center;
+    padding: 5rem;
+    /* border:  1px solid black;
+    box-sizing: border-box; */
+    color: whitesmoke;
+}
+.menu-container{
+    background-image: url('../img/staff-bartender.jpg');
+    background-color: rgb(0, 4, 17, .8 );
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    
+}
+/* .menu-item{
+   
+} */
+h4{
+    border:  1px solid white;
+    box-sizing: border-box;
+    display: inline-flex;
+    margin-top: 35px;
+    color: whitesmoke;
+}
+.menu-section{ 
+    display: flex;
+    border:  1px solid  white;
+    box-sizing: border-box;
+    padding: 30px;
+    margin: 20px;
+    width: 30%;
+}
+.menu-section h2{
+    color: whitesmoke;
+}
+.menu-item p{
+    color: whitesmoke;
+    
+
+}
+h4.price{
+    width: 2rem 2rem;
+    
+    margin-top: 35px;
+    color: whitesmoke;
+}
+/* div.column{
+    display: flex;
+    border:  1px solid  white;
+    box-sizing: border-box;
+    height: 10%;
+    padding:2rem 2rem;
+    justify-content: flex-end;
+} */
 
 /* footer section */
 footer {

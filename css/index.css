@@ -67,7 +67,7 @@ html {
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
-    color: greenyellow;
+    color: white;
 }
 
 h1, h2, h3, h4, h5, h6, p, a, i {
@@ -104,11 +104,12 @@ header {
 }
 header h1 a{
     background-color: transparent;
-    font-size: larger;
+    font-size: 80%;
 }
+
 .background-trans{
     background-color: rgb(0, 4, 17, .8);
-     height: 29vh;
+     height: 30%;
      width: 100%;
 }
 div.nav-buttons{
@@ -116,6 +117,10 @@ div.nav-buttons{
       justify-content: space-evenly;
       padding: 20px; 
       width: 100%;
+}
+button.header:hover{
+    background: rgb(0, 4, 17, .6);
+    color: white;
 }
 button.social-images{
     display:flex;
@@ -132,7 +137,7 @@ div.social-images{
     padding: 14px 28px;
     text-align: center;
 }
-button{
+header button{
     background-color: transparent;
     border-radius: 20%;
     border: transparent;
@@ -161,9 +166,10 @@ button{
 }
 .row{
     display: flex;
-    margin: 30px;
+    margin-left: 90px;
+    margin-right: 90px;
+    padding: 10px;
     flex-direction: row;
-    padding: 20px;
     justify-content: space-evenly;
 }
 
@@ -244,46 +250,158 @@ button{
 
 /* footer section */
 footer {
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
     height: 15vh;
     padding-top: 2.5vh;
     font-size: 3rem;
     background: rgb(0, 4, 17); 
 }
-#footer-email{
-    width: 250px;
-    height: 56px;
-    align-items: center;
-    padding: 10px;
-}
-.footer-nav{
+nav.footer-nav{
+    width: 60%;
+    height: 33%;
+    margin-left: 10%;
     display: flex;
-    width: 65%;
+    align-items: center;
     justify-content: space-evenly;
-}
-button.signup-button{
-    background: whitesmoke; 
-    border-radius: 0%;
-    padding: 10px;
+    /* border:  1px solid white;
+    box-sizing: border-box; */
+    /* height: 15vh; */
 }
 footer h2{
-    width: 100%;
+    /* display: inline-flex; */
+    font-size: xx-large;
+    color: white;
+    /* padding: 5px; */
+    margin-left: 40px;
+}
+div.email-portion{
+    /* display: inline-flex; */
+    flex-direction: row;
+    margin-left: 40px;
+    border:  1px rgb(0, 4, 17);
+    box-sizing:border-box;
+    width: 20%;
+}
+div.footer-row{
+    display: flex;
+    /* border:  2px solid cyan;
+    box-sizing: border-box; */
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+input#footer-email{
+    border: 1px rgb(0, 4, 17);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    width: 70%;
+    height: 35px;
+    flex-direction: row;
+}
+button.signup-button{
+    display: flex;
+    /* justify-content: flex-end; */
+    color: black;
+    /* width: 30%; */
+    height: 35px;
+    background-color: white;
+    justify-content: flex-end ;
+    align-items: center;
     
+}
+button.footer{
+    background-color: transparent;
+    border: transparent;
+}
+footer p{
+    display: flex;
+    width: 100%;
+    font-size: x-large;
+    margin-right: 15%;
+    margin-bottom: 20%;
+    justify-content: flex-end;
+    color: white;
 }
 
 /* mobile media query */
 @media (max-width: 428px) {
     /* header section */
-    
+    .header-title {
+        width: 75%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 4rem;
+    }
+
+    .background-trans {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 50%;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20%;
+    }
+
+    header h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20%;
+        padding: 20px;
+        font-size: 400%;
+
+    }
+
+    div.nav-buttons {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    button.header {
+        padding: 5px;
+    }
+
 
     /* gallery section */
     .gallery {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background-color: rgb(0, 4, 17);
+    display: flex;
+    flex-direction: column;
+    }
+    img.responsive{
+        display: flex;
+        width: 100%;
         height: auto;
+    }
+    div.responsive{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    div.row{
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
     }
     
     /* about us section */
 
     .about {
+        width:100%;
         height: 200vh;
     }
     
@@ -293,6 +411,7 @@ footer h2{
     }
     
     .about-container .text {
+        margin: 10%;
         width: 85%;
     }
     
@@ -321,8 +440,95 @@ footer h2{
 
     /* footer section */
     footer {
+        display: flex;
         height: auto;
         padding-top: 2.5vh;
         font-size: 2rem;
+        /* flex-direction: column; */
+        justify-content: center;
+        /* align-items: center; */
+        
     }
+
+    footer h2 {
+        width: 75%;
+        font-size: 120%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    div.email-portion {
+        width: 75%;
+        margin-left: 15%;
+        margin-right: 15%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+    }
+    input#footer-email {
+        border: 1px rgb(0, 4, 17);
+        box-sizing: border-box;
+        display: flex;
+        justify-content: flex-start;
+        width: 125%;
+        height: 25px;
+        flex-direction: row;
+    }
+    
+
+    div.footer-row {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+
+    button.signup-button {
+        display: flex;
+        color: black;
+        width: 125%;
+        height: 30px;
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+    }
+    button.signup-button a{
+        color: black;
+        font-size: large;
+        height: 20px;
+    }
+    button.footer{
+        display: flex;
+        width: 75%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav.footer-nav {
+        display: flex;
+        flex-direction: column;
+        height: 5%;
+        width: 75%;
+        margin-left: 15%;
+        margin-right: 15%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer p {
+        display: flex;
+        margin-left: 15%;
+        margin-right: 15%;
+        width: 75%;
+        padding: 1.5rem;
+        font-size: 80%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+    }
+    
 }

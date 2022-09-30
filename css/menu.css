@@ -9,48 +9,135 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 * {
@@ -68,7 +155,15 @@ body {
     line-height: 1.5;
 }
 
-h1, h2, h3, h4, h5, h6, p, a, i {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+i {
     text-decoration: none;
 }
 
@@ -88,7 +183,8 @@ h4 {
     font-size: 4rem;
 }
 
-p, a {
+p,
+a {
     font-size: 3rem;
 }
 
@@ -106,38 +202,48 @@ header {
     flex-direction: column;
     justify-content: top;
 }
-header h1 a{
+
+header h1 a {
     background-color: transparent;
-    font-size: larger;
+    font-size: 80%;
 }
 
-.background-trans{
+.background-trans {
     background-color: rgb(0, 4, 17, .8);
-     height: 29vh;
-     width: 100%;
+    height: 30%;
+    width: 100%;
 }
-div.nav-buttons{
-      display: flex;
-      justify-content: space-evenly;
-      padding: 20px; 
-      width: 100%;
+
+div.nav-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    width: 100%;
 }
-button.social-images{
-    display:flex;
+
+button.header:hover {
+    background: rgb(0, 4, 17, .6);
+    color: white;
+}
+
+button.social-images {
+    display: flex;
     align-items: center;
     justify-content: center;
     background-color: whitesmoke;
     width: 4rem;
     height: 4rem;
 }
-div.social-images{
+
+div.social-images {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
     padding: 14px 28px;
     text-align: center;
 }
-button{
+
+header button {
     background-color: transparent;
     border-radius: 20%;
     border: transparent;
@@ -151,6 +257,7 @@ button{
     height: 20vh;
     background-color: rgb(0, 4, 17);
 }
+
 .spacer-sm {
     width: 100%;
     height: 10vh;
@@ -162,68 +269,84 @@ button{
 .menu {
     width: 100%;
     height: auto;
-    /* background-image: url('../img/staff-bartender.jpg');
-    background-color: rgba(0, 4, 17 .8);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-blend-mode: multiply; */
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: black;
-    
+
 }
-.row{
+
+.row2 {
     display: flex;
-    border:  1px solid black;
-    box-sizing: border-box;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row {
+    display: flex;
+    /* border:  1px solid cyan;
+    box-sizing: border-box; */
+    flex-direction: row;
+    align-items: center;
     justify-content: space-evenly;
 }
-.title{
+
+.title {
     text-align: center;
     padding: 5rem;
     /* border:  1px solid black;
     box-sizing: border-box; */
     color: whitesmoke;
 }
-.menu-container{
+
+.menu-container {
     background-image: url('../img/staff-bartender.jpg');
-    background-color: rgb(0, 4, 17, .8 );
+    background-color: rgb(0, 4, 17, .8);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
-    
+
 }
-/* .menu-item{
-   
-} */
-h4{
-    border:  1px solid white;
-    box-sizing: border-box;
-    display: inline-flex;
+
+h4 {
+    display: flex;
+    /* border:  1px solid white;
+    box-sizing: border-box; */
     margin-top: 35px;
     color: whitesmoke;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
-.menu-section{ 
-    display: flex;
-    border:  1px solid  white;
-    box-sizing: border-box;
+
+h4.price {
+    align-items: center;
+    justify-content: flex-end;
+    height: 40px;
+    width: 100px;
+}
+
+.menu-section {
+    height: 90rem;
+    /* border:  1px solid  white;
+    box-sizing: border-box; */
     padding: 30px;
     margin: 20px;
     width: 30%;
 }
-.menu-section h2{
+
+.menu-section h2 {
     color: whitesmoke;
 }
-.menu-item p{
+
+.menu-item p {
     color: whitesmoke;
-    
+
 
 }
-h4.price{
+
+/* h4.price{
     width: 2rem 2rem;
     
     margin-top: 35px;
@@ -240,14 +363,96 @@ h4.price{
 
 /* footer section */
 footer {
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
     height: 15vh;
     padding-top: 2.5vh;
     font-size: 3rem;
+    background: rgb(0, 4, 17);
+    border: 1px solid white;
+    box-sizing: border-box;
 }
+
+nav.footer-nav {
+    width: 60%;
+    height: 33%;
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border:  1px solid white;
+    box-sizing: border-box; */
+    /* height: 15vh; */
+}
+
+footer h2 {
+    /* display: inline-flex; */
+    font-size: xx-large;
+    color: white;
+    /* padding: 5px; */
+    margin-left: 40px;
+}
+
+div.email-portion {
+    /* display: inline-flex; */
+    flex-direction: row;
+    margin-left: 40px;
+    border: 1px rgb(0, 4, 17);
+    box-sizing: border-box;
+    width: 20%;
+}
+
+div.footer-row {
+    display: flex;
+    /* border:  2px solid cyan;
+    box-sizing: border-box; */
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input#footer-email {
+    border: 1px rgb(0, 4, 17);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    width: 70%;
+    height: 35px;
+    flex-direction: row;
+}
+
+button.signup-button {
+    display: flex;
+    /* justify-content: flex-end; */
+    color: black;
+    /* width: 30%; */
+    height: 35px;
+    background-color: white;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+button.footer {
+    background-color: transparent;
+    border: transparent;
+}
+
+footer p {
+    display: flex;
+    width: 100%;
+    font-size: x-large;
+    margin-right: 15%;
+    margin-bottom: 20%;
+    justify-content: flex-end;
+    color: white;
+}
+
 
 /* mobile media query */
 @media (max-width: 428px) {
+
     /* header section */
     .header-title {
         width: 75%;
@@ -256,15 +461,204 @@ footer {
         font-size: 4rem;
     }
 
+    .background-trans {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 50%;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20%;
+    }
+
+    header h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20%;
+        padding: 20px;
+        font-size: 400%;
+
+    }
+
+    div.nav-buttons {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    button.header {
+        padding: 5px;
+    }
+
     /* menu */
     .menu {
         background-image: none;
+        /* flex-direction: column; */
+    }
+
+    section.title h2 {
+        /* box-sizing: border-box;
+        border: 1px solid blueviolet; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    div.menu-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    div.menu-item p {
+        display: flex;
+        /* width:100%; */
+        /* justify-content: center;
+        align-items: center; */
+    }
+
+    .menu-section {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%
+    }
+
+    .menu-section h2 {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .row2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    h4.price {
+
+        display: flex;
+        align-items: top;
+        justify-content: center;
+        margin-bottom: 20%;
+    }
+
+    .row2 h4 {
+        display: flex;
+        width: 50%;
+        color: white;
+        justify-content: center;
+        align-items: center;
     }
 
     /* footer section */
     footer {
+        display: flex;
         height: auto;
         padding-top: 2.5vh;
         font-size: 2rem;
+        /* flex-direction: column; */
+        justify-content: center;
+        /* align-items: center; */
+        
+    }
+
+    footer h2 {
+        width: 75%;
+        font-size: 120%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    div.email-portion {
+        width: 75%;
+        margin-left: 15%;
+        margin-right: 15%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+    }
+    input#footer-email {
+        border: 1px rgb(0, 4, 17);
+        box-sizing: border-box;
+        display: flex;
+        justify-content: flex-start;
+        width: 125%;
+        height: 25px;
+        flex-direction: row;
+    }
+    
+
+    div.footer-row {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+
+    button.signup-button {
+        display: flex;
+        color: black;
+        width: 125%;
+        height: 30px;
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+    }
+    button.signup-button a{
+        color: black;
+        font-size: large;
+        height: 20px;
+    }
+    button.footer{
+        display: flex;
+        width: 75%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav.footer-nav {
+        display: flex;
+        height: 5%;
+        width: 75%;
+        margin-left: 15%;
+        margin-right: 15%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer p {
+        display: flex;
+        margin-left: 15%;
+        margin-right: 15%;
+        width: 75%;
+        padding: 1.5rem;
+        font-size: 80%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
     }
 }
